@@ -1,0 +1,7 @@
+C:\Users\eusdd\source\repos\FinalCarrascoHernandezMarin\bin\Debug\FinalCarrascoHernandezMarin.exe.config
+C:\Users\eusdd\source\repos\FinalCarrascoHernandezMarin\bin\Debug\FinalCarrascoHernandezMarin.exe
+C:\Users\eusdd\source\repos\FinalCarrascoHernandezMarin\bin\Debug\FinalCarrascoHernandezMarin.pdb
+C:\Users\eusdd\source\repos\FinalCarrascoHernandezMarin\obj\Debug\FinalCarrascoHernandezMarin.csprojAssemblyReference.cache
+C:\Users\eusdd\source\repos\FinalCarrascoHernandezMarin\obj\Debug\FinalCarrascoHernandezMarin.csproj.CoreCompileInputs.cache
+C:\Users\eusdd\source\repos\FinalCarrascoHernandezMarin\obj\Debug\FinalCarrascoHernandezMarin.exe
+C:\Users\eusdd\source\repos\FinalCarrascoHernandezMarin\obj\Debug\FinalCarrascoHernandezMarin.pdb
