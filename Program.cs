@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalCarrascoHernandezMarin
 {
+    
     class Program
     {
         static void Main(string[] args)
@@ -128,9 +129,9 @@ namespace FinalCarrascoHernandezMarin
                                 break;
                             case 2:
                                 {
-                                    int n = 0;
-                                    n = int.Parse(Console.ReadLine());
-                                    EjercicioForDos(n);
+                                    string n = ""; 
+                                    n = Console.ReadLine();
+                                    // EjercicioForDos();
                                 }
                                 break;
                             case 3:
