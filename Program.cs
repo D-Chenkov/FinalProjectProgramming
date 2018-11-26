@@ -11,7 +11,7 @@ namespace FinalCarrascoHernandezMarin
         static void Main(string[] args)
         {
             int exit = 0;
-            while (exit=0)
+            while (exit==0)
                 {
             Header();
             Menu();
@@ -76,7 +76,7 @@ namespace FinalCarrascoHernandezMarin
                                 break;
                             case 2:
                                 {
-                                    //EjercicioSwitchDos();
+                                    EjercicioSwitchDos();
                                 }
                                 break;
                             case 3:
@@ -102,7 +102,7 @@ namespace FinalCarrascoHernandezMarin
                                 break;
                             case 2:
                                 {
-                                //    EjercicioWhileDos();
+                                    EjercicioWhileDos();
                                 }
                                 break;
                             case 3:
@@ -128,7 +128,9 @@ namespace FinalCarrascoHernandezMarin
                                 break;
                             case 2:
                                 {
-                                    EjercicioFordos();
+                                    int n = 0;
+                                    n = int.Parse(Console.ReadLine());
+                                    EjercicioForDos(n);
                                 }
                                 break;
                             case 3:
@@ -345,7 +347,7 @@ namespace FinalCarrascoHernandezMarin
                 }
             Console.WriteLine("Suena como una excelente opcion");
             Console.ReadLine();
-            break;
+           
 
 
             }
@@ -356,15 +358,16 @@ namespace FinalCarrascoHernandezMarin
         }
         static void EjercicioWhileDos()
             {
+            int exit = 0;
             Header();
             Console.WriteLine("");
             string matricula = "";
-            while(exit=0)
+            while(exit==0)
                 {
             Console.WriteLine("Cual es su matricula?");
             Console.WriteLine("E.j. T024032");
             matricula = Console.ReadLine();
-            if (MyString[0]=T)
+            if (matricula.Substring(0, 1)== "T")
                     {
                     Console.WriteLine("Matricula verificada");
                     }
