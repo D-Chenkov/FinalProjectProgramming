@@ -10,8 +10,14 @@ namespace FinalCarrascoHernandezMarin
     {
         static void Main(string[] args)
         {
+            while (exit=0)
+                {
             Header();
             Menu();
+            Console.WriteLine("Salir?");
+            Console.WriteLine("0- No 1- Si");
+            Console.Clear();
+                }
         }
 
         static void Menu()
@@ -44,7 +50,7 @@ namespace FinalCarrascoHernandezMarin
                                 break;
                             case 2:
                                 {
-                                    //EjercicioIfDos();
+                                    EjercicioIfDos();
                                 }
                                 break;
                             case 3:
@@ -121,7 +127,7 @@ namespace FinalCarrascoHernandezMarin
                                 break;
                             case 2:
                                 {
-                                //    EjercicioFordos();
+                                    EjercicioFordos();
                                 }
                                 break;
                             case 3:
@@ -159,13 +165,8 @@ namespace FinalCarrascoHernandezMarin
                         break;
                     }
             }
+            Console.Clear();
         }
-
-        public void Ejercicio()
-        {
-
-        }
-
 
 
         static void staircase(int n)
@@ -183,12 +184,6 @@ namespace FinalCarrascoHernandezMarin
             }
             Console.ReadLine();
         }
-        static void EjercicioForDos(string[] args)
-        {
-            int n = Convert.ToInt32(Console.ReadLine());
-            staircase(n);
-        }
-
         static void Header()
         {
             Console.BackgroundColor = ConsoleColor.Blue;
@@ -199,10 +194,190 @@ namespace FinalCarrascoHernandezMarin
             Console.WriteLine("--------------------------------------------------------------");
             Console.ResetColor();
         }
+        static void EjercicioIfDos()
+            {
+            Header();
+            int yesno=0;
+            Console.WriteLine("Este es la Guia Maestra de Acampar");
+            Console.WriteLine("Porfavor conteste...");
+            Console.WriteLine("Le falta la linterna?");
+            Console.WriteLine("1- Si 2- No");
+            if (yesno=1)
+                {
+                Console.WriteLine("Le falta la linterna, consiguela e intente denuevo");
+                }
+                else if (yesno=2)
+                    {
+                    Console.WriteLine("Le falta la mochila?");
+                    Console.WriteLine("1- Si 2- No");
+                    if (yesno=1)
+                    {
+                    Console.WriteLine("Consiga la mochila e intente denuevo");
+                    }
+                    else if (yesno=2)
+                    {
+                    Console.WriteLine("Le falta la linterna?");
+                    Console.WriteLine("1- Si 2- No");
+                    if (yesno=1)
+                        {
+                        Console.WriteLine("Le falta la linterna, consiguela e intente denuevo");
+                        }
+                        else if (yesno=2)
+                            {
+                            Console.WriteLine("Le falta las llaves?");
+                            Console.WriteLine("1- Si 2- No");
+                            if (yesno=1)
+                            {
+                            Console.WriteLine("Consiga las llaves e intente denuevo");
+                            }
+                            else if (yesno=2)
+                            {
+                                Console.WriteLine("Le falta el lonche?");
+                                Console.WriteLine("1- Si 2- No");
+                                if (yesno=1)
+                                    {
+                                    Console.WriteLine("Le falta el lonche consiguela e intente denuevo");
+                                    }
+                                    else if (yesno=2)
+                                        {
+                                        Console.WriteLine("Le falta las escaleras?");
+                                        Console.WriteLine("1- Si 2- No");
+                                        if (yesno=1)
+                                        {
+                                        Console.WriteLine("Consiga las escaleras e intente denuevo");
+                                        }
+                                        else if (yesno=2)
+                                        {
+                                        Console.WriteLine("Esta completamente listo para su viaje!");
+                                    
+                                        }
+                                    }
+                            }
+                        }
+                    }
+                }
+            Console.ReadLine();
+            Console.Clear();
+        }
+        static void EjercicioSwitchDos()
+            {
+            Header();
+            string opcion ="";
+            Console.WriteLine("Cual libro le interesa?");
+            Console.WriteLine("Los Hermanos Karamzov");
+            Console.WriteLine("The Dilbert Future");
+            Console.WriteLine("The Shadows of the Wind");
+            Console.WriteLine("Mobile Suit Gundam");
+            Console.WriteLine("Dagpm");
+            Console.WriteLine("Tengen Toppan Gurren Lagann");
+            Console.WriteLine("The Rats in the Wall");
+            Console.WriteLine("Herbert West : Reanimator");
+            opcion = 
+            Console.WriteLine("Escribe la  opcion que desee");
+            switch (opcion)
+                {
+                    case "Los Hermanos Karamazov":
+                    {
+                        Console.WriteLine("Genero-Filosofia ");
+                        Console.WriteLine("Autor-Dostoyevsky ");
+                        Console.WriteLine("Estrellas- 5 ");
+                        Console.WriteLine("Sinopsis- Un hombre decide si vale la pena matar a una vieja, si lo que gana vale mas de lo que ella pierde ");
+                    }
+                    break;
+                    case "The Dilbert Future":
+                    {
+                        Console.WriteLine("Genero- Comedia ");
+                        Console.WriteLine("Autor- Doug Watterson");
+                        Console.WriteLine("Estrellas- 3");
+                        Console.WriteLine("Sinopsis- Las perspectivas que nos dara el futuro por Doug Watterson");
+                    }
+                    break;
+                    case "The Shadows of the Wind":
+                    {
+                        Console.WriteLine("Genero- Misterio");
+                        Console.WriteLine("Autor- Augustus Mauricio");
+                        Console.WriteLine("Estrellas- 5");
+                        Console.WriteLine("Sinopsis- En españa un autor descubre un horrible secreto de familia y decide hacer algo al respecto");
+                    }
+                    break;
+                    case "Mobile Suit Gundam":
+                    {
+                        Console.WriteLine("Genero- Accion");
+                        Console.WriteLine("Autor- Sagoru Miyazaki");
+                        Console.WriteLine("Estrellas- 5");
+                        Console.WriteLine("Sinopsis- En el futuro lejano las armas convencionales no funcionan, solamente robots GIGANTESCOS DE PELEA");
+                    }
+                    break;
+                    case "Dagon":
+                    {
+                        Console.WriteLine("Genero- Horror");
+                        Console.WriteLine("Autor- H.P. Lovecraft");
+                        Console.WriteLine("Estrellas- 5");
+                        Console.WriteLine("Sinopsis- Una isla pequeña de Inglaterra tiene un horrible secreto el cual su poblacion esconde");
+                    }
+                    break;
+                    case "Tengen Toppan Gurren Laggan":
+                    {
+                        Console.WriteLine("Genero- Accion");
+                        Console.WriteLine("Autor- Studio Trigger");
+                        Console.WriteLine("Estrellas- 5");
+                        Console.WriteLine("Sinopsis- Las personas han sido atrapadas bajo tierra por miles de años, finalmente salen a ver un mundo muerto");
+                    }
+                    break;
+                    case "The Rats in the Wall":
+                    {
+                        Console.WriteLine("Genero- Horror");
+                        Console.WriteLine("Autor- Howard Phillips");
+                        Console.WriteLine("Estrellas- 5");
+                        Console.WriteLine("Sinopsis- Las ratas en las paredes tormentan al autor, solamente se escuchan pero nunca se veen.");
+                    }
+                    break;
+                    case "Herbert West : Reanimator":
+                    {
+                        Console.WriteLine("Genero- Horror");
+                        Console.WriteLine("Autor- Lewis Theobald Humphrey Littlewit Ward Phillips Edward Softly");
+                        Console.WriteLine("Estrellas- 5");
+                        Console.WriteLine("Sinopsis- Un hombre intenta distorsionar la barrera entre la vida y la muerte.");
+                    }
+                    break;
+                }
+            Console.WriteLine("Suena como una excelente opcion");
+            Console.ReadLine();
+            break;
 
 
-
-
-
+            }
+        static void EjercicioForDos(string[] args)
+        {
+            int n = Convert.ToInt32(Console.ReadLine());
+            staircase(n);
+        }
+        static void EjercicioWhileDos()
+            {
+            Header();
+            Console.WriteLine("");
+            string matricula = "";
+            while(exit=0)
+                {
+            Console.WriteLine("Cual es su matricula?");
+            Console.WriteLine("E.j. T024032");
+            matricula = Console.ReadLine();
+            if (MyString[0]=T)
+                    {
+                    Console.WriteLine("Matricula verificada");
+                    }
+            else 
+                    {
+                    Console.WriteLine("Matricula no aceptable, Denegada");
+                    }
+            Console.WriteLine("Desea salir del verificador?");
+            Console.WriteLine("0- No 1- Si");
+            exit = int.Parse(Console.ReadLine());
+            }
+            }
+        static void EjercicioArrayDos()
+            {
+            
+            }
     }
 }
