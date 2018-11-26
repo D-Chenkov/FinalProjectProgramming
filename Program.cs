@@ -153,7 +153,7 @@ namespace FinalCarrascoHernandezMarin
                                 break;
                             case 2:
                                 {
-                                  //  EjercicioArrayDos();
+                                    EjercicioArrayDos();
                                 }
                                 break;
                             case 3:
@@ -376,8 +376,41 @@ namespace FinalCarrascoHernandezMarin
             }
             }
         static void EjercicioArrayDos()
+        {
+            Header();
+            int X = 0;
+            int NP = 0;
+            While(X == 0);
             {
-            
+
+                Libreria Libro;
+                Console.WriteLine("Cual es el nombre?");
+                Libro[NP].Nombre = Console.ReadLine();
+                Console.WriteLine("Del 1/5 Cuantas estrellas tiene?");
+                Libro[NP].Estrellas = Console.ReadLine();
+                Console.WriteLine("Cual es la sinopsis del libro?");
+                Libro[NP].Sinopsis = Console.ReadLine();
+                Console.WriteLine("Cual es el genero del libro?");
+                Libro[NP].Genero = Console.ReadLine();
+                Console.WriteLine("Otro libro?");
+                X = int.Parse(Console.ReadLine());
             }
+            // Display results:
+            int i = 0;
+            int max = NP;
+            Console.WriteLine("Su lista de libros es");
+            for (i = 0; i++; i < max)
+            {
+
+                Console.WriteLine("{0}-", NP);
+                Console.WriteLine("Nombre: {0}", Libro[NP].Nombre);
+                Console.WriteLine("Estrellas: {0}", Libro[NP].Estrellas);
+                Console.WriteLine("Sinopsis: {0}", Libro[NP].Sinopsis);
+                Console.WriteLine("Genero: {0}", Libro[NP].Genero);
+                Console.WriteLine();
+            } 
+            Console.WriteLine("Presione cualquier cosa para salir.");
+            Console.ReadKey();
+        }
     }
 }
