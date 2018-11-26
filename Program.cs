@@ -408,7 +408,8 @@ namespace FinalCarrascoHernandezMarin
                 Console.WriteLine("Sinopsis: {0}", Libro[NP].Sinopsis);
                 Console.WriteLine("Genero: {0}", Libro[NP].Genero);
                 Console.WriteLine();
-            } 
+            }
+            Console.WriteLine("Esta fue la lista de libros");
             Console.WriteLine("Presione cualquier cosa para salir.");
             Console.ReadKey();
         }
