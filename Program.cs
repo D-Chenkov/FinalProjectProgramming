@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace FinalCarrascoHernandezMarin
 {
+    
     class Program
     {
         static void Main(string[] args)
         {
-            while (exit=0)
+            int exit = 0;
+            while (exit==0)
                 {
             Header();
             Menu();
@@ -40,7 +42,7 @@ namespace FinalCarrascoHernandezMarin
                         Console.WriteLine("Ejercicio If-1");
                         Console.WriteLine("Ejercicio If-2");
                         Console.WriteLine("Ejercicio If-3");
-                        Ejer = Console.ReadLine();
+                        Ejer = int.Parse(Console.ReadLine());
                         switch (Ejer)
                         {
                             case 1:
@@ -75,7 +77,7 @@ namespace FinalCarrascoHernandezMarin
                                 break;
                             case 2:
                                 {
-                                    //EjercicioSwitchDos();
+                                    EjercicioSwitchDos();
                                 }
                                 break;
                             case 3:
@@ -101,7 +103,7 @@ namespace FinalCarrascoHernandezMarin
                                 break;
                             case 2:
                                 {
-                                //    EjercicioWhileDos();
+                                    EjercicioWhileDos();
                                 }
                                 break;
                             case 3:
@@ -127,7 +129,9 @@ namespace FinalCarrascoHernandezMarin
                                 break;
                             case 2:
                                 {
-                                    EjercicioFordos();
+                                    string n = ""; 
+                                    n = Console.ReadLine();
+                                    // EjercicioForDos();
                                 }
                                 break;
                             case 3:
@@ -202,51 +206,51 @@ namespace FinalCarrascoHernandezMarin
             Console.WriteLine("Porfavor conteste...");
             Console.WriteLine("Le falta la linterna?");
             Console.WriteLine("1- Si 2- No");
-            if (yesno=1)
+            if (yesno==1)
                 {
                 Console.WriteLine("Le falta la linterna, consiguela e intente denuevo");
                 }
-                else if (yesno=2)
+                else if (yesno==2)
                     {
                     Console.WriteLine("Le falta la mochila?");
                     Console.WriteLine("1- Si 2- No");
-                    if (yesno=1)
+                    if (yesno==1)
                     {
                     Console.WriteLine("Consiga la mochila e intente denuevo");
                     }
-                    else if (yesno=2)
+                    else if (yesno==2)
                     {
                     Console.WriteLine("Le falta la linterna?");
                     Console.WriteLine("1- Si 2- No");
-                    if (yesno=1)
+                    if (yesno==1)
                         {
                         Console.WriteLine("Le falta la linterna, consiguela e intente denuevo");
                         }
-                        else if (yesno=2)
+                        else if (yesno==2)
                             {
                             Console.WriteLine("Le falta las llaves?");
                             Console.WriteLine("1- Si 2- No");
-                            if (yesno=1)
+                            if (yesno==1)
                             {
                             Console.WriteLine("Consiga las llaves e intente denuevo");
                             }
-                            else if (yesno=2)
+                            else if (yesno==2)
                             {
                                 Console.WriteLine("Le falta el lonche?");
                                 Console.WriteLine("1- Si 2- No");
-                                if (yesno=1)
+                                if (yesno==1)
                                     {
                                     Console.WriteLine("Le falta el lonche consiguela e intente denuevo");
                                     }
-                                    else if (yesno=2)
+                                    else if (yesno==2)
                                         {
                                         Console.WriteLine("Le falta las escaleras?");
                                         Console.WriteLine("1- Si 2- No");
-                                        if (yesno=1)
+                                        if (yesno==1)
                                         {
                                         Console.WriteLine("Consiga las escaleras e intente denuevo");
                                         }
-                                        else if (yesno=2)
+                                        else if (yesno==2)
                                         {
                                         Console.WriteLine("Esta completamente listo para su viaje!");
                                     
@@ -272,8 +276,9 @@ namespace FinalCarrascoHernandezMarin
             Console.WriteLine("Tengen Toppan Gurren Lagann");
             Console.WriteLine("The Rats in the Wall");
             Console.WriteLine("Herbert West : Reanimator");
-            opcion = 
+            
             Console.WriteLine("Escribe la  opcion que desee");
+            opcion = Console.ReadLine();
             switch (opcion)
                 {
                     case "Los Hermanos Karamazov":
@@ -343,7 +348,7 @@ namespace FinalCarrascoHernandezMarin
                 }
             Console.WriteLine("Suena como una excelente opcion");
             Console.ReadLine();
-            break;
+           
 
 
             }
@@ -354,15 +359,16 @@ namespace FinalCarrascoHernandezMarin
         }
         static void EjercicioWhileDos()
             {
+            int exit = 0;
             Header();
             Console.WriteLine("");
             string matricula = "";
-            while(exit=0)
+            while(exit==0)
                 {
             Console.WriteLine("Cual es su matricula?");
             Console.WriteLine("E.j. T024032");
             matricula = Console.ReadLine();
-            if (MyString[0]=T)
+            if (matricula.Substring(0, 1)== "T")
                     {
                     Console.WriteLine("Matricula verificada");
                     }
